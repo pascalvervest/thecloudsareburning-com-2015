@@ -1,0 +1,29 @@
+{
+  "name": "thecloudsareburning-com-2015",
+  "version": "1.0.0",
+  "description": "Band website",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pascalvervest/thecloudsareburning-com-2015.git"
+  },
+  "keywords": [
+    "faal",
+    "netherlands",
+    "funeral",
+    "doom"
+  ],
+  "author": "Pascal Vervest <pascalvervest@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pascalvervest/thecloudsareburning-com-2015/issues"
+  },
+  "homepage": "https://github.com/pascalvervest/thecloudsareburning-com-2015",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0"
+  }
+}
