@@ -45,6 +45,9 @@
             <then><property name="phing.user" value="${env.SUDO_USER}" /></then>
             <else><property name="phing.user" value="${env.USER}" /></else>
         </if>
+        
+        <echo msg="User: ${phing.user}" />
+        <echo msg="Group: ${phing.group}" />
 
         <!-- Clean username of illegal characters -->
         <property name="phing.user.safe" value="${phing.user}">
@@ -55,14 +58,16 @@
             </filterchain>
         </property>
 
-        <property file="build.custom.properties"  />
-        <property file="build.${env}.properties"  />
+        <!--<property file="build.custom.properties"  />-->
+        <!--<property file="build.${env}.properties"  />-->
         <property file="build.properties"  />
 
         <!--<chmod mode="0755" file="${ws}/bin/console" />-->
         <!--<chmod mode="0777" file="${ws}/var" />-->
         <chmod mode="0777" file="${ws}/app/cache" />
+        <chown file="${ws}/app/cache" user="pascal.www-data" />
         <chmod mode="0777" file="${ws}/app/logs" />
+        <chown file="${ws}/app/logs" user="pascal.www-data" />
     </target>
 
     <!-- }}} -->
@@ -152,6 +157,8 @@
          Composer management {{{
     -->
     <target name="composer" depends="-prepare">
+        <echo msg="${composer.path}" />
+        
         <composer command="install" composer="${composer.path}">
             <arg value="--prefer-dist" />
         </composer>
