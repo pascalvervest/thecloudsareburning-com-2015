@@ -1,3 +1,31 @@
-body {
-	background-color: darkgray;
+/**
+ *
+ *
+ */
+
+div {
+	background-color: darkgrey;
+}
+
+.row {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logoImg {
+	background-image: url('/assets/images/header.png');
+	width: 900px;
+	height: 288px;
+	// padding: 0;
+	// margin: 0;
+}
+
+.menu {
+	background-color: black;
+	
+	li {
+		a {			color: white;}
+		a:hover {	color: darkgrey;}
+	}
 }
