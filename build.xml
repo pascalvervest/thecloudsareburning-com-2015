@@ -58,16 +58,16 @@
             </filterchain>
         </property>
 
-        <!--<property file="build.custom.properties"  />-->
+        <property file="build.custom.properties"  />
         <!--<property file="build.${env}.properties"  />-->
         <property file="build.properties"  />
 
         <!--<chmod mode="0755" file="${ws}/bin/console" />-->
         <!--<chmod mode="0777" file="${ws}/var" />-->
         <chmod mode="0777" file="${ws}/app/cache" />
-        <chown file="${ws}/app/cache" user="pascal.www-data" />
+        <chown file="${ws}/app/cache" user="${systemuser}.${systemgroup}" />
         <chmod mode="0777" file="${ws}/app/logs" />
-        <chown file="${ws}/app/logs" user="pascal.www-data" />
+        <chown file="${ws}/app/logs" user="${systemuser}.${systemgroup}" />
     </target>
 
     <!-- }}} -->
@@ -131,7 +131,8 @@
     </target>
 
     <target name="gulp" description="Build assets with Gulp" depends="-prepare,npm,js-translations">
-        <exec command="${ws}/bin/gulp" passthru="true" />
+        <!-- <exec command="${ws}/bin/gulp" passthru="true" /> -->
+	<exec command="${gulp.path}" passthru="true" />
     </target>
 
     <!-- }}} -->
