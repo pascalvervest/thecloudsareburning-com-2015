@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<title>{% block title %}FAAL | thecloudsareburning.com{% endblock %}</title>
+		{% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="/assets/vendor/foundation-sites/dist/foundation.css">
+        <link rel="stylesheet" href="/assets/css/clouds.css">
+		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <script src="/assets/vendor/modernizr/modernizr.js"></script>
+    </head>
+	
+	<body>
+		<div class="top">
+			<div class="row column header">
+				<div class="row column centerContent">
+					<h1 class="logoImg">FAAL</h1>
+				</div>
+				<div class="row column">
+					<ul class="menu">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Biography</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Discography</a></li>
+						<li><a href="#">Live</a></li>
+						<li><a href="#">Media</a></li>
+						<li><a href="#">Store</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row content">
+			<div class="medium-8 columns posts">
+				{% block body %}{% endblock %}	
+			</div>
+			<div class="medium-3 columns sidebar">sidebar</div>
+		</div>
+        {% block javascripts %}{% endblock %}
+	</body>
+</html>
