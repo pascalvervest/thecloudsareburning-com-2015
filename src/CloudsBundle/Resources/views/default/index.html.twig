@@ -29,34 +29,14 @@
 		
 		<div class="row content">
 			<div class="medium-8 columns posts">
+			
+				{% for post in posts %}
 				<div class="post">
-					<h3>European tour<small>2012/06/12</small></h3>
-					<p>In October two of the finest European funeral doom metal bands are teaming up together to embark on a 10 day trek through the central part of the continent. Germany’s Worship (Weird Truth Records) and The Netherlands’ Faal (Ván Records) are set to depress and annihilate the population.</p>
+					<h3>{{ post.title }}<small>2012/02/21</small></h3>
+					<p>{{ post.content }}</p>
 				</div>
+				{% endfor %}
 				
-				<div class="post">
-					<h3>Album release<small>2012/02/21</small></h3>
-					<p>Our new album ‘The clouds are burning’ will be released in march 2012</p>
-					<p>In the meantime, check out the albumteaser <a href="#">here</a></p>
-				</div>
-				
-				<div class="post">
-					<h3>Album release<small>2012/02/21</small></h3>
-					<p>Our new album ‘The clouds are burning’ will be released in march 2012</p>
-					<p>In the meantime, check out the albumteaser <a href="#">here</a></p>
-				</div>
-				
-				<div class="post">
-					<h3>Album release<small>2012/02/21</small></h3>
-					<p>Our new album ‘The clouds are burning’ will be released in march 2012</p>
-					<p>In the meantime, check out the albumteaser <a href="#">here</a></p>
-				</div>
-				
-				<div class="post">
-					<h3>Album release<small>2012/02/21</small></h3>
-					<p>Our new album ‘The clouds are burning’ will be released in march 2012</p>
-					<p>In the meantime, check out the albumteaser <a href="#">here</a></p>
-				</div>
 			</div>
 			<div class="medium-3 columns sidebar">sidebar</div>
 		</div>
