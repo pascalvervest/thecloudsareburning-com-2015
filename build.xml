@@ -132,7 +132,7 @@
 
     <target name="gulp" description="Build assets with Gulp" depends="-prepare,npm,js-translations">
         <!-- <exec command="${ws}/bin/gulp" passthru="true" /> -->
-	<exec command="${gulp.path}" passthru="true" />
+	<exec command="${gulp.path} styles" passthru="true" />
     </target>
 
     <!-- }}} -->
