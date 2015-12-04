@@ -1,5 +1,10 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-	lalala
+	<div class="medium-8 columns page">
+		<div class="pageContent">
+			<h3>{{ page.title }}</h2>
+			{{ page.content|raw }}
+		</div>
+	</div>
 {% endblock %}

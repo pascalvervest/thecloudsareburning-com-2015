@@ -15,12 +15,13 @@ class PageController extends Controller
 	 */
 	public function indexAction($slug, Request $request)
 	{
+		$page = $this->getDoctrine()
+            ->getRepository('CloudsBundle:Page')
+            ->findOneBySlug((string) $slug);
 		
-		echo 'pagina: '. $slug;
-		echo 'Slug: '. $slug . '<br>';
-		
-		
-		return [];
+		return [
+			'page' => $page
+		];
 		
 	}
 }

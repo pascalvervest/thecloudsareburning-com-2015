@@ -24,6 +24,8 @@ body {
 		max-width: 960px;
 		padding-top: 20px;
 		background-color: black;
+		background: url('/assets/images/background.png');
+		background-repeat: no-repeat;
 		padding: 0;
 	}
 }
@@ -53,6 +55,7 @@ body {
 			padding-right: 15px;
 			padding-bottom: 15px;
 			padding-top: 15px;
+			border: 1px solid $border;
 		}
 		
 		padding-top: 40px;
@@ -86,4 +89,22 @@ body {
 
 .sidebar {
 	background-color: darkslategrey;
+}
+
+.page {
+	.pageContent {
+		h3 {
+			color: $header;
+			font-weight: bolder; 
+		}
+		
+		color: $white;
+		font-size: 0.8em;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+	padding-top: 40px;
 }
