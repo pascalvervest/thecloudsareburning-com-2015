@@ -73,6 +73,17 @@ body {
 	max-width: 960px;
 }
 
+.footer {
+	color: $white;
+	border: 1px solid $border;
+	max-width: 930px;
+	background-color: $black;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 0.8em;
+}
+
 .top {
 	background-color: #000000;
 }
