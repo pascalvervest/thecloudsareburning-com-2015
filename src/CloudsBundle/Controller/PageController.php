@@ -10,6 +10,15 @@ use Symfony\Component\HttpFoundation\Request;
 class PageController extends Controller
 {
 	/**
+	 * @Route("/page/discography")
+	 * @Template
+	 */
+	public function discographyAction()
+	{
+		return [];
+	}
+	
+	/**
 	 * @Route("/page/{slug}")
 	 * @Template("CloudsBundle::default/page.html.twig")
 	 */
