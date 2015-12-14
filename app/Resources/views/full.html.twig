@@ -5,6 +5,7 @@
 		{% block stylesheets %}{% endblock %}
         <link rel="stylesheet" href="/assets/vendor/foundation-sites/dist/foundation.css">
         <link rel="stylesheet" href="/assets/css/clouds.css">
+		<link rel="stylesheet" href="/assets/css/foundation-icons/foundation-icons.css">
 		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <script src="/assets/vendor/modernizr/modernizr.js"></script>
     </head>
@@ -15,16 +16,21 @@
 				<div class="row column centerContent">
 					<h1 class="logoImg">FAAL</h1>
 				</div>
-				<div class="row column">
-					<ul class="menu">
-						<li><a href="/">Home</a></li>
-						<li><a href="/page/bio">Biography</a></li>
-						<li><a href="/page/contact">Contact</a></li>
-						<li><a href="/page/discography">Discography</a></li>
-						<li><a href="/page/live">Live</a></li>
-						<li><a href="/page/media">Media</a></li>
-						<li><a href="/page/store">Store</a></li>
-					</ul>
+				<div class="row">
+					<div class="columns large-10">
+						<ul class="menu">
+							<li><a href="/">Home</a></li>
+							<li><a href="/page/bio">Biography</a></li>
+							<li><a href="/page/contact">Contact</a></li>
+							<li><a href="/page/discography">Discography</a></li>
+							<li><a href="/page/live">Live</a></li>
+							{# <li><a href="/page/media">Media</a></li>
+							<li><a href="/page/store">Store</a></li>#}
+						</ul>
+					</div>
+					<div class="columns large-2 socials">
+				 		<a href="https://www.facebook.com/FAALDOOM/"><i class="fi-social-facebook"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
